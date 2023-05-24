@@ -1,0 +1,290 @@
+html{
+        scroll-behavior: smooth;
+}
+
+/* --------||Header Section CSS||-------- */
+
+.header_man {
+    position: fixed;
+    top: 0%;
+    z-index: 2;
+    color: white;
+}
+
+.header_man a {
+    text-decoration: none;
+    color: white;
+}
+
+/* --------||Navbar Section CSS||-------- */
+
+.nav_man {
+    position: relative;
+    top: 495px;
+}
+
+.navbar {
+    background-color: #fae2ae;
+    border-radius: 50rem;
+}
+
+.navbar img {
+    display: none;
+}
+
+.navbar span {
+    display: none;
+}
+
+.nav_man nav {
+    display:block;
+    white-space: nowrap;
+    box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nav_man a {
+    font-weight: bold;
+    color: #564d35;
+}
+
+/* --------||Main Head Section CSS||-------- */
+
+.main_head {
+    background-image: url(../assets/gallery/header_bg1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.head_logo {
+    width: 90px;
+}
+
+.main_head ul{
+    display: flex;
+}
+
+.main_head ul li {
+    font-size: 20px;
+}
+
+/* --------||Section-2 CSS||-------- */
+
+.section_2 .title {
+    line-height: 1;
+}
+
+.top_arrow_man{
+    width: 50px;
+    height: 50px;
+    border-radius: 50rem;
+    position:fixed;
+    top: 90%;
+    right: 30px;
+    cursor: pointer;
+}
+
+/* --------||Section-3 CSS||-------- */
+
+.section_3 {
+    background-image: url(../assets/gallery/uncle_bg.jpg);
+}
+
+/* --------||Section-4 CSS||-------- */
+
+.section_4 .card a{
+ text-decoration: none;
+}
+
+/* --------||Section-5 CSS||-------- */
+
+.section_5 .bg_img {
+    background-image: url(../assets/gallery/map_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto;
+}
+
+/* --------||Section-6 CSS||-------- */
+
+.section_6 .bg_man {
+    background-image: url(../assets/gallery/img7.jpg);
+    background-repeat: no-repeat;
+    padding-top: 200px;
+}
+
+
+.section_6 .card_man {
+    flex-direction: column;
+}
+
+.section_6 .card a{
+    text-decoration: none;
+}
+
+/* --------||Section-7 CSS||-------- */
+.section_7 img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50rem;
+}
+
+.section_7 .card_man{
+    position: relative;
+    margin-bottom: -135px;
+}
+
+
+/* --------||Section-8 CSS||-------- */
+
+.section_8 {
+    background-image: url(../assets/gallery/footer_bg.jpg);
+
+    background-repeat: no-repeat;
+    background-position: right 100%;
+}
+
+/* --------||Footer||-------- */
+.foot_sub_bg {
+    background-color: #fae2ae;
+    box-shadow: 0px -2px 15px 0px rgba(0,0,0,0.8);
+    border-radius: 1rem;
+}
+
+.foot_sub_bg input{
+    background-image: url(../assets/gallery/arrow.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 92% 50%;
+}
+.head_col {
+    color: red;
+}
+
+.foot_bg {
+    background-color: black;
+}
+
+.foot_bg i {
+    color: red;
+}
+
+.sc_logo{
+    color: white;
+}
+
+
+/* ========|| Media Queries For Tablet and Mobile ||========= */
+
+@media only screen and (max-width: 1024px) {
+    .nav_man {
+        position: relative;
+        top: 537px;
+    }
+}
+
+/* for md */
+@media only screen and (max-width: 992px) {
+    
+    /* Main Head Section CSS */
+    .main_head {
+        background-position: center;
+    }
+
+    /* Section-6 CSS */
+    .section_6 .card_man {
+        flex-direction: column-reverse;
+    }
+
+      /* Section-7 CSS */
+      .section_7 .card_man{
+        position: static;
+        margin-bottom:30px;
+
+    }
+}
+
+/* For Tablet */
+@media only screen and (max-width: 767px) {
+
+    /* Header Section */
+    .header_man {
+        position: static;
+    }
+
+    /* Navbar Section */
+    .nav_man {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    .navbar {
+        border-radius: 0;
+    }
+
+    .navbar img {
+        display: block;
+        width: 14%;
+    }
+
+    .navbar span {
+        display: block;
+    }
+
+    .nav_man nav {
+        display: block;
+    }
+
+    /* Main Head Section CSS */
+    .main_head {
+        background-image: url(../assets/gallery/girl.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .head_row1 {
+        display: none;
+    }
+
+    .head_logo {
+        width: 90px;
+    }
+
+    .main_head ul li {
+        font-size: 16px;
+    }
+
+    /* Section-2 CSS */
+    .section_2 .title {
+        line-height: 1.3;
+    }
+
+    .section_2 .img_section {
+        display: none;
+    }
+
+    /* Section-5 CSS */
+    .section_5 .bg_img {
+        background-position: center 80px;
+    }
+
+
+    /* Section-8 CSS */
+    .section_8 {
+        background-position: right 100%;
+        background-size: 60%;
+    }
+
+    
+}
+
+/* For Mobile */
+@media only screen and (max-width: 424px) {
+
+    /* Media Section */
+    .main_head ul{
+        flex-wrap: wrap;
+    }
+}
